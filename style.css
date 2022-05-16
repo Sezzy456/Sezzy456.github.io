@@ -1,0 +1,170 @@
+body {
+    background-color: rgb(245, 216, 165);
+}
+
+
+
+#sidebar {
+    position: relative;
+    display: inline-block;
+
+    width: 20%;
+    background-color: rgb(237, 186, 222);
+    height: 5rem;
+}
+
+
+
+
+
+
+
+.product-tile.selected{
+    background-color: red;
+    border-radius: 50%;
+    height: 12rem;
+    width: 12rem;
+}
+
+.product-tile:nth-child(2){
+    background-color: violet;
+    background-image: image();
+}
+
+#footer{
+    position: relative;
+    display: block;
+    width: 60%;
+    background-color: rgb(188, 145, 145);
+    height: 5rem;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Almendra:wght@700&family=Jockey+One&display=swap');
+
+:root{
+    --colour-primary: #394149;
+    --colour-secondary: white;
+    --colour-accent: #D25913;
+    --font-primary: 'Jockey One', sans-serif;
+    --title-font-primary: 'Almendra', serif;
+    --text-base-size: 1rem;
+
+    --text-scale-ratio: 1.2;
+    --text-xxl: 4rem;
+    --text-xl: 3rem;
+    --text-lg: 2rem;
+    --text-md: 1.4rem;
+
+    --nav-button-colour: #c4c4c4;
+}
+
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-size: var(--text-base-size);
+    font-family: var(--font-primary);
+    color: var(--colour-primary);
+    margin-left: 15em;
+    margin-right: 15em;
+}
+
+#nav {
+    display: block;
+    position: relative;
+    background-color: rgb(130, 227, 123);
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-top: 1em;
+    font-size: var(--text-md);
+    justify-items: left;
+}
+
+.search-bar {
+    
+    background-color: #c4c4c4;
+    color: grey;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    border: 2px solid black;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--nav-button-colour);
+    font-family: var(--font-primary);
+}
+
+.cluster {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cluster > * {
+    margin: 0.5rem;
+}
+
+/***************************** MAIN CONTAINER ***************************/
+
+#main-container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    background-color: rgb(244, 236, 223);
+    min-height: 6rem;
+}
+
+.gallery {
+    position: relative;
+    display: inline-block;
+    width: 100rem;
+    height: auto;
+    margin: 1rem;
+
+}
+
+.product-tile {
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    height: 5rem;
+    background-color: aqua;
+    gap: 1rem;
+    transition: all 0.5s ease;
+}
+
+.product-name {
+    font-family: 'Almendra', serif;
+}
+
+.product-tile > .product-image{
+    max-width: 100%;
+}
+
+.add-to-cart-btn {
+    padding: 0.2rem;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: pink;
+}
