@@ -1,0 +1,31 @@
+body {
+    margin:1rem;
+}
+
+nav {
+    display:blcok;
+    height:5rem;
+    background-color: green;
+
+}
+
+code {
+
+}
+
+.page-title {
+
+}
+
+.button {
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:6rem;
+    height:2rem;
+    padding: ;
+    text-align:center;
+    background-color: grey;
+    border-radius: 5px;
+    vertical-align: middle;
+}
