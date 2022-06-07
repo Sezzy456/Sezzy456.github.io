@@ -4,9 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
 </head>
 <body>
-    
+    <div class="navigation">
+        <span class="image-holder" style="align-items: center;">
+            <img src="Images/logo-img.png" alt="Logo">
+            <img src="Images/logo-text.png" alt="Logo"> 
+        </span>
+        
+        <input type="text" class="search" onkeydown="searchFunction()" placeholder="Search">
+        <button class="btn search" onclick="searchFunction()">
+            <span class="material-symbols-rounded">search</span>
+        </button>
+        <nav>
+            <a class="btn" href="home2.html">Home</a>
+            <a class="btn" href="product_listing2.html">Catalogue</a>
+            <a class="btn" href="cart.html">Cart</a>
+            <a class="btn active" href="#">Wishlist</a>
+        </nav>
+        
+    </div>
+
+    <div class="main-container">
+       
+     <h3>Wishlist</h3>
+
+    </div>
+
+    <div class="footer">
+        <img src="Images/page-divider2.png" alt="decorative page divider">
+        <div>
+            <span class="footer-item">
+                <h3>Mailing List</h3>
+                <input type="text" placeholder="Enter your email address">
+                <button class="btn active">SIGN UP!</button>
+                <p>Sign up to be the first to know about sales and secondhand stock.</p>
+            </span>
+            <span class="footer-item">
+                <h3>More Info</h3>
+                <p>About us<br >Returns<br >Shipping and delivery<br >Privacy Policy<br >Terms and conditions</p>
+            </span>
+            <span class="footer-item">
+                <span>
+                    <h3>Store Details</h3>
+                    <p>Shop 3 / 566 Queensberry Street, North Melbourne, 3051</p>
+                    <p>Phone: (03) 8394 7589</p>
+                    <p>sales@spieledeluxe.com</p>
+                </span>
+                <span>
+                    <p>Open:</p>
+                    <p>Tues-Sat: 10am - 4pm</p>
+                    <p>Sun: 10am - 1pm</p>
+                </span>
+            </span>
+        </div>
+        <div>
+            <span>
+                <p>Social Media</p>
+                <img src="social-media-facebook" alt="facebook link">
+            </span>
+            <span>
+                <p>© 2022 Spieledeluxe Games</p>
+            </span>
+        </div>
+    </div>
 </body>
 </html>

@@ -14,4 +14,39 @@ document.addEventListener("DOMContentLoader", function(){
             this.classList.toggle("selected");
         })
     })
-})
+});
+
+function searchCheck() {
+  var input;
+  input = document.getElementsByClassName('search');
+  addEventListener("keyup", searchFunction())
+}
+
+function searchFunction() {
+  // Declare variables
+  var input, filter, a, i, txtValue;
+  input = document.getElementsByClassName('search');
+  filter = input.value.toUpperCase();
+  product = document.getElementsByClassName('product__title');
+  
+  alert('searchFunction - variables declared');
+  // Loop through all of the products, and hide those who don't match the search query
+  input.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+
+      for (i = 0; i < product.length; i++) {
+        a = product[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          product[i].style.display = "";
+        } else {
+          product[i].style.display = "none";
+        }
+      }
+
+    }
+  });
+
+  
+}

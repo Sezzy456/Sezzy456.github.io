@@ -19,15 +19,14 @@
     <nav id="nav" class="cluster">
         <img src="https://spieledeluxe.com/" alt="logo">
         <ul class="nav nav-navigation cluster">
-            <li><a class="btn" href="#">Home</a></li>
-            <li><a class="btn" href="#">Catalogue</a></li>
+            <li><a class="btn active" href="#">Home</a></li>
+            <li><a class="btn" href="/products_listing.html">Catalogue</a></li>
             <li><a class="btn" href="#">Cart</a></li>
             <li><a class="btn" href="#">Wishlist</a></li>
         </ul>
-        <div class="search-bar"><p>Search</p></div> <!-- Java stuff here -->
+        <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search">
     </nav>
 
-    <h3 class="product-name">Hello</h3>
     <span id="main-container">
         <!-- featured img -->
         <!-- board games, card games, hobby, sale pages -->
@@ -38,14 +37,25 @@
                 <!-- image -> within product-tile -->
                 <img class="product-image" src="https://cdn.akamai.steamstatic.com/steam/apps/794800/capsule_616x353.jpg?t=1610536248">
                 <!-- box at bottom for text -->
+                <div class="textbox">
                     <!-- Title -->
                     <h3 class="product-name">Title</h3>
                     <!-- Price (/ was price) -->
                     <h3 class="product-price">$0.00</h3>
                     <!-- add to cart -->
-                    <div class="add-to-cart-btn"><h4>Add To Cart</h4></div>
+                    <div class="btn add-to-cart"><h4><a href="#">Add To Cart</a></h4></div>
                     <!-- add to wishlist -->
-                    <div class="add-to-wishlist-btn"><h4>Add To Wishlist</h4></div>
+                    <div class="btn add-to-wishlist"><h4><a href="#">Add To Wishlist</a></h4></div>
+                </div>
+            </div>
+            <div class='product-tile'> 
+                <img class="product-image" src="https://cdn.akamai.steamstatic.com/steam/apps/794800/capsule_616x353.jpg?t=1610536248">
+                <div class="textbox">
+                    <h3 class="product-name">Title</h3>
+                    <h3 class="product-price">$0.00</h3>
+                    <div class="btn add-to-cart"><h4><a href="#">Add To Cart</a></h4></div>
+                    <div class="btn add-to-wishlist"><h4><a href="#">Add To Wishlist</a></h4></div>
+                </div>
             </div>
             <div class='product-tile'></div>
             <div class='product-tile'></div>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function searchFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            input.addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                javascript:alert('Heyyy');
+                event.preventDefault();
+                // Loop through all list items, and hide those who don't match the search query
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+    <nav id="nav" class="cluster">
+        <img src="https://spieledeluxe.com/" alt="logo">
+        <ul class="nav nav-navigation cluster">
+            <li><a class="btn" href="/home.html">Home</a></li>
+            <li><a class="btn active" href="#">Catalogue</a></li>
+            <li><a class="btn" href="#">Cart</a></li>
+            <li><a class="btn" href="#">Wishlist</a></li>
+        </ul>
+        <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search">
+    </nav>
+
+    
+
+    <ul id="myUL">
+        <li><a href="#">Adele</a></li>
+        <li><a href="#">Agnes</a></li>
+
+        <li><a href="#">Billy</a></li>
+        <li><a href="#">Bob</a></li>
+
+        <li><a href="#">Calvin</a></li>
+        <li><a href="#">Christina</a></li>
+        <li><a href="#">Cindy</a></li>
+    </ul>
+
+    <span id="main-container">
+        <div class="gallery">
+            <div class='product-tile'> 
+                <img class="product-image" src="https://cdn.akamai.steamstatic.com/steam/apps/794800/capsule_616x353.jpg?t=1610536248">
+                <div class="textbox">
+                    <h3 class="product-name">Title</h3>
+                    <h3 class="product-price">$0.00</h3>
+                    <div class="btn add-to-cart"><h4><a href="#">Add To Cart</a></h4></div>
+                    <div class="btn add-to-wishlist"><h4><a href="#">Add To Wishlist</a></h4></div>
+                </div>
+            </div>
+            <div class='product-tile'> 
+                <img class="product-image" src="https://cdn.akamai.steamstatic.com/steam/apps/794800/capsule_616x353.jpg?t=1610536248">
+                <div class="textbox">
+                    <h3 class="product-name">Title</h3>
+                    <h3 class="product-price">$0.00</h3>
+                    <div class="btn add-to-cart"><h4><a href="#">Add To Cart</a></h4></div>
+                    <div class="btn add-to-wishlist"><h4><a href="#">Add To Wishlist</a></h4></div>
+                </div>
+            </div>
+    <!-- navigation 'nav' -->
+    <!-- breadcrumbs -->
+    <!-- Search bar -->
+    <!-- sort by -->
+    <!-- filters -->
+    <!-- product list -->
+    <!-- page(s) / back to top <- maybe -->
+    <!-- footer -->
+    <script src="main.js"></script>
+</body>
+</html>

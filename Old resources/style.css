@@ -3,7 +3,7 @@ body {
 }
 
 
-
+/* 
 #sidebar {
     position: relative;
     display: inline-block;
@@ -11,12 +11,7 @@ body {
     width: 20%;
     background-color: rgb(237, 186, 222);
     height: 5rem;
-}
-
-
-
-
-
+} */
 
 
 .product-tile.selected{
@@ -78,22 +73,27 @@ body{
 #nav {
     display: block;
     position: relative;
-    background-color: rgb(130, 227, 123);
+    background-color: rgb(244, 236, 223);
     width: 100%;
     height: auto;
     display: inline-block;
-    margin-top: 1em;
+    margin-top: none;
     font-size: var(--text-md);
     justify-items: left;
+    
 }
 
-.search-bar {
-    
+#myInput {
+    margin-left: 1rem;
+    margin-right: 1rem;
     background-color: #c4c4c4;
     color: grey;
     border-radius: 0.5rem;
-    padding: 0.3rem;
+    /* padding: 0.3rem; */
+    padding: 0.1rem 0.3rem;
     border: 2px solid black;
+    font-size: var(--text-md);
+    font-family: var(--font-primary);
 }
 
 a{
@@ -109,6 +109,11 @@ a{
     display: inline-block;
     background-color: var(--nav-button-colour);
     font-family: var(--font-primary);
+    margin: 2px;
+}
+
+.active {
+    background-color: #7bd08e;
 }
 
 .cluster {
@@ -146,25 +151,59 @@ a{
     position: relative;
     display: inline-block;
     width: 25%;
-    height: 5rem;
+    height: auto;
+    min-height: 5rem;
     background-color: aqua;
     gap: 1rem;
     transition: all 0.5s ease;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 5px;
 }
 
 .product-name {
     font-family: 'Almendra', serif;
+    padding: 5px;
 }
 
-.product-tile > .product-image{
+.product-price {
+    font-family: var(--title-font-primary);
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.product-image{
     max-width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border: 2px solid black;
+    padding-bottom: none;
+    margin-bottom: none;
+
 }
 
-.add-to-cart-btn {
+.product-tile > .textbox {
+    background-color: #EAEAEA;
+    border: 2px solid black;
+    padding-top: none;
+    
+}
+
+.btn.add-to-cart {
     padding: 0.2rem;
-    border-radius: 8px;
+    border-radius: 6px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     background-color: pink;
+}
+
+.btn.add-to-wishlist {
+    padding: 0.2rem;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: pink;
+    
 }
